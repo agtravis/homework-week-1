@@ -7,17 +7,34 @@ body {
 
 header {
     background-color: #ffffff;
-    border: 1px solid #cccccc;
+    border-bottom: 3px solid #666666;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;  
 }
 
-#main-content {
+div#header-copy {
+    margin: 0 auto;
+    width: 960px;
+    margin-bottom: 3px;
+}
+
+div#page-main-title {
+    width: 30%;
+    float: left;
+    background-color: #4aaaa5;
+    padding: 0 1em;
+    text-align: center;
+}
+
+div#main-content {
     background-color: #ffffff;
     border: 1px solid #dddddd;
     width: 960px;
 }
 
 h1 {
-    background-color: #4aaaa5;
     font-family: Georgia, Times, 'Times New Roman', serif;
     color: #ffffff;
 }
