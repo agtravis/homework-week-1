@@ -1,0 +1,39 @@
+body {
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-image: url("../images/dark-triangles.png");
+    background-repeat: repeat;
+}
+
+header {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+#main-content {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    width: 960px;
+}
+
+h1 {
+    background-color: #4aaaa5;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color: #ffffff;
+}
+
+h2 {
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+footer {
+    background-color: #666666;
+    border-top: 8px solid #4aaaa5;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /*placeholder*/
+    text-align: center;
+}
