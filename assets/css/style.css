@@ -11,13 +11,13 @@ header {
     position: fixed;
     left: 0;
     top: 0;
-    width: 100%;  
+    width: 100%;
 }
 
 div#header-copy {
     margin: 0 auto;
     width: 960px;
-    margin-bottom: 3px;
+    margin-bottom: 80px;
 }
 
 div#page-main-title {
@@ -26,6 +26,28 @@ div#page-main-title {
     background-color: #4aaaa5;
     padding: 0 1em;
     text-align: center;
+}
+
+div#contents-links {
+    float: left;
+    width: 60%;
+    text-align: right;
+    margin-top: 15px;
+}
+
+ul#links-list {
+    list-style: none;
+    word-spacing: 1.2em;
+}
+
+ul#links-list li {    
+    display: inline;
+}
+
+ul#links-list li a {
+    text-decoration: none;
+    color: #666666;
+    font-weight: 200;
 }
 
 div#main-content {
