@@ -60,14 +60,15 @@ div#main-content {
     background-color: #ffffff;
     outline: 1px solid #dddddd;
     outline-offset: -1px;
-    width: 960px;
+    width: 920px;
     margin: 135px auto 0 auto;
     line-height: 1.7em;
+    padding: 20px;
 }
 
 div#main-content-header {
     width: 90%;
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 3px solid #dddddd;
     margin: 0 auto;
 }
 
