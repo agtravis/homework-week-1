@@ -5,7 +5,7 @@ body {
     background-repeat: repeat;
 }
 
-
+/*I have used 'z-index' here despite the recommendation to avoid if possible. There was an issue when I scrolled with content going over the header.*/
 header {
     background-color: #ffffff;
     border-bottom: 3px solid #666666;
@@ -16,6 +16,7 @@ header {
     z-index: 2;
 }
 
+/*I was struggling to make the title not sit on top of the border of the header, so I added a margin of 0.5px.*/
 div#header-copy {
     display: flex;
     margin: 0 auto;
@@ -23,7 +24,7 @@ div#header-copy {
     margin-bottom: 0.5px;
 }
 
-/*float here*/
+/*Previous to learning about 'display: flex' and 'flex-grow' I was floating this div left...*/
 div#page-main-title {
     flex-grow: 1;
     /*width: 30%;
@@ -33,7 +34,7 @@ div#page-main-title {
     text-align: center;
 }
 
-/*float here*/
+/*...and this div right to achieve the aesthetic I wanted. I changed it after learning the new technique.*/
 div#contents-links {
     flex-grow: 2;
     /*float: right;
@@ -42,21 +43,27 @@ div#contents-links {
     margin-top: 15px;
 }
 
+
+/*To remove bullet points*/
 ul#links-list {
     list-style: none;
     word-spacing: 1.2em;
 }
 
+/*To force the list to display horizontally*/
 ul#links-list li {    
     display: inline;
 }
 
+
+/*To remove underlined/default link styles*/
 ul#links-list li a {
     text-decoration: none;
     color: #666666;
     font-weight: 200;
 }
 
+/*I was struggling to make the border line up with the header, but I wanted to keep the width a round number, so instead I made an outline and offset it to place it flush with the edge of the div instead of on the outside.*/
 div#main-content {
     background-color: #ffffff;
     outline: 1px solid #dddddd;
@@ -78,7 +85,6 @@ div#main-content-contents {
     margin: 30px auto;
 }
 
-/*float here correct*/
 img#profile-pic {
     float: left;
     padding: 0 15px 15px 0;
@@ -116,17 +122,20 @@ footer p {
     text-decoration: none;
 }
 
+/*This makes the links into a grid, spreading them out evenly on a line, and wrapping if there is enough items.*/
 div#portfolio-links {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
+/*This is positioned relatively so I can use absolute positioning in a child element.*/
 div#portfolio-links a {
     position: relative;
     margin-bottom: 25px;
 }
 
+/*Using absolute positioning to place the text exactly where I want it on the image.*/
 .project-link {
     text-decoration: none;
     background-color: #4aaaa5;
@@ -145,6 +154,7 @@ div#portfolio-links a {
     margin-bottom: -3px;
 }
 
+/*This is just a paragraph with CSS to make it look like a link. It does nothing. I am assuming at some point we will use JavaScript or something to make this form functional.*/
 p#submit {
     background-color: #4aaaa5;
     color: #ffffff;
