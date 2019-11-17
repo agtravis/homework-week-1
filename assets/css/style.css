@@ -140,3 +140,19 @@ div#portfolio-links a {
     align-items: center;
     font-family: Georgia, Times, 'Times New Roman', serif;
 }
+
+.input {
+    margin-bottom: -3px;
+}
+
+p#submit {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    width: 250px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+}
