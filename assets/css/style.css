@@ -13,6 +13,7 @@ header {
     left: 0;
     top: 0;
     width: 100%;
+    z-index: 2;
 }
 
 div#header-copy {
@@ -61,7 +62,7 @@ div#main-content {
     outline: 1px solid #dddddd;
     outline-offset: -1px;
     width: 920px;
-    margin: 135px auto 0 auto;
+    margin: 135px auto 109px auto;
     line-height: 1.7em;
     padding: 20px;
 }
@@ -113,4 +114,29 @@ footer p {
 
 .no-underline {
     text-decoration: none;
+}
+
+div#portfolio-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+div#portfolio-links a {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.project-link {
+    text-decoration: none;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    position: absolute;
+    top: 115px;
+    width: 250px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, Times, 'Times New Roman', serif;
 }
