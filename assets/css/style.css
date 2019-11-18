@@ -1,8 +1,13 @@
+/*I'm not sure if this is conventional, but I want the width to be 100% and I found I had alignment issues with content.
+I discovered this was down to a margin of 8px in the 'user agent stylesheet', so I overwrote that margin in the body styling.*/
 body {
     color: #777777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     background-image: url("../images/dark-triangles.png");
     background-repeat: repeat;
+    background-attachment: fixed;
+    width: 100%;
+    margin: 0px;
 }
 
 /*I have used 'z-index' here despite the recommendation to avoid if possible. There was an issue when I scrolled with content going over the header.*/
@@ -30,7 +35,7 @@ div#page-main-title {
     /*width: 30%;
     float: left;*/
     background-color: #4aaaa5;
-    padding: 0 1em;
+    /*padding: 0 1em;*/
     text-align: center;
 }
 
@@ -87,7 +92,7 @@ div#main-content-contents {
 
 img#profile-pic {
     float: left;
-    padding: 0 15px 15px 0;
+    margin: 0 35px 15px 0;
 }
 
 h1 {
