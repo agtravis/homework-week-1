@@ -68,7 +68,8 @@ ul#links-list li a {
     font-weight: 200;
 }
 
-/*I was struggling to make the border line up with the header, but I wanted to keep the width a round number, so instead I made an outline and offset it to place it flush with the edge of the div instead of on the outside.*/
+/*I was struggling to make the border line up with the header, but I wanted to keep the width a round number,
+ so instead I made an outline and offset it to place it flush with the edge of the div instead of on the outside.*/
 div#main-content {
     background-color: #ffffff;
     outline: 1px solid #dddddd;
