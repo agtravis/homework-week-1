@@ -1,5 +1,15 @@
 /*I'm not sure if this is conventional, but I want the width to be 100% and I found I had alignment issues with content.
-I discovered this was down to a margin of 8px in the 'user agent stylesheet', so I overwrote that margin in the body styling.*/
+I discovered this was down to a margin of 8px in the 'user agent stylesheet' via dev-tools in Chrome, so I overwrote
+that margin in the body styling.*/
+/*After learning of CSS resets, I understand this (^) is what was happeneing. I still don't wish to use a CSS reset,
+because I don't want to remove ALL formatting.*/
+
+/*My CSS selectors:
+Initially I had coded all my CSS selectors by ID and by class in association with the element type (e.g. 'ul#links').
+However, after learning of the concept of '<section>', I removed all 'div's from the selector, that way I could easily
+reclassify them as <section>s in the HTML, since the ID attribute remains. I still prefer to fully name my selectors
+because it helps me to understand quickly to what they are referring.*/
+
 body {
     color: #777777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -22,7 +32,7 @@ header {
 }
 
 /*I was struggling to make the title not sit on top of the border of the header, so I added a margin of 0.5px.*/
-div#header-copy {
+#header-copy {
     display: flex;
     margin: 0 auto;
     width: 960px;
@@ -30,7 +40,7 @@ div#header-copy {
 }
 
 /*Previous to learning about 'display: flex' and 'flex-grow' I was floating this div left...*/
-div#page-main-title {
+#page-main-title {
     flex-grow: 1;
     /*width: 30%;
     float: left;*/
@@ -40,7 +50,7 @@ div#page-main-title {
 }
 
 /*...and this div right to achieve the aesthetic I wanted. I changed it after learning the new technique.*/
-div#contents-links {
+#contents-links {
     flex-grow: 2;
     /*float: right;
     width: 60%;*/
@@ -70,7 +80,7 @@ ul#links-list li a {
 
 /*I was struggling to make the border line up with the header, but I wanted to keep the width a round number,
  so instead I made an outline and offset it to place it flush with the edge of the div instead of on the outside.*/
-div#main-content {
+#main-content {
     background-color: #ffffff;
     outline: 1px solid #dddddd;
     outline-offset: -1px;
@@ -80,13 +90,13 @@ div#main-content {
     padding: 20px;
 }
 
-div#main-content-header {
+#main-content-header {
     width: 90%;
     border-bottom: 3px solid #dddddd;
     margin: 0 auto;
 }
 
-div#main-content-contents {
+#main-content-contents {
     width: 90%;
     margin: 30px auto;
 }
@@ -129,14 +139,14 @@ footer p {
 }
 
 /*This makes the links into a grid, spreading them out evenly on a line, and wrapping if there is enough items.*/
-div#portfolio-links {
+#portfolio-links {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 /*This is positioned relatively so I can use absolute positioning in a child element.*/
-div#portfolio-links a {
+#portfolio-links a {
     position: relative;
     margin-bottom: 25px;
 }
