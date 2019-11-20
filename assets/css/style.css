@@ -96,14 +96,30 @@ ul#links-list li a {
     margin: 0 auto;
 }
 
+
+/*As the homework directed, I tried not to use the property 'float', however I really felt design-wise I wanted
+my image to be exactly where I could put it with float, and I couldn't figure out how to do this with a flexbox.
+In addition, I found (using Google) that many web developers would pose this question, and some comments would
+flat out say it wasn't possible, and others would say to continue to use float.*/
+/*I have left in the flex-code I had <em>some</em> success with.*/
 #main-content-contents {
     width: 90%;
     margin: 30px auto;
+    /*display: flex; - this made the container element a flex box, but made all 4 paragraphs into row items
+    (fixed with a new parent container div for the paragraphs). The image also distorted.
+    flex-wrap: wrap; - this wrapped the text but not in the same way 'float' would.
+    flex-basis: auto; - this concept seemed a little out of my reach at this stage.*/
 }
 
 img#profile-pic {
+    /*align-self: baseline; - this stopped the image from distorting.*/
     float: left;
-    margin: 0 35px 15px 0;
+    margin: 7px 35px 15px 0;
+}
+
+/*This was a div I inserted to make all my <p> elements behave as one in the parent flex container.*/
+#about-me {
+    /*No CSS*/
 }
 
 h1 {
