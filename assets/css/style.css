@@ -62,14 +62,18 @@ is deprecated.*/
 
 
 /*To remove bullet points and adjust the spread*/
+/*Again, after learning flex, I removed the word spacing here...*/
 ul#links-list {
     list-style: none;
-    word-spacing: 1.2em;
+    /*word-spacing: 1.2em;*/
+    display: flex; 
+    justify-content: flex-end;
 }
 
 /*To force the list to display horizontally*/
 ul#links-list li {    
-    display: inline;
+    /*display: inline; - Removed since 'row' is now the default.*/
+    margin-left: 1.2em; /*Added back the spacing, but keeps flush on the right side.*/
 }
 
 
@@ -119,11 +123,6 @@ img#profile-pic {
     /*align-self: baseline; - this stopped the image from distorting.*/
     float: left;
     margin: 7px 35px 15px 0;
-}
-
-/*This was a div I inserted to make all my <p> elements behave as one in the parent flex container.*/
-#about-me {
-    /*No CSS*/
 }
 
 h1 {
