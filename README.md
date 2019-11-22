@@ -71,4 +71,36 @@ The containing ```<div>``` is set to ```{display: flex; justify-content: space-b
 
 Next, using the selector ```div#portfolio-links a``` to select all the links specifically within this ID, I set all their positions to be ```relative```, so that I can position the children of these elements ```absolute```ly within them. I also assigned those links a class with ```{display: flex; justify-content: center; align-items: center;}``` applied to get the text positioned correctly.
 
-*NOTE: This is where I now realized I had to apply a ```z-index``` to my header. For some reason unknown to me, related to the flex and relative positioning I assume, when I scrolled now, the images appeared in front of the fixed header, but not the rest of the content. ```z-index``` was a quick way of fixing this, and as long as I apply it to the header and nothing else, I hope it won't have any knock-on uninteded effects. I can revisit this if necessary.*
+*NOTE: This is where I now realized I had to apply a ```z-index``` to my header. For some reason unknown to me, related to the flex and relative positioning I assume, when I scrolled now, the images appeared in front of the fixed header, but not the rest of the content. ```z-index``` was a quick way of fixing this, and as long as I apply it to the header and nothing else, I hope it won't have any knock-on unintended effects. I can revisit this if necessary.*
+
+## Contact Page
+
+The contact ```<form>``` is very simple. In the HTML I have three fields:
+
+1. **Name**  ```type="text"```
+1. **Email** ```type="email"```
+1. **Message** ```<textarea>```
+
+I have defined sizes for each of them to fit the design of the page, and also applied a ```name``` attribute which I know will be useful if I end up making this form do anything with JavaScript or something.
+
+The submit button is not a ```<button>```, but just a ```<a>``` styled to look like a button. This has ```flex``` applied to it to position the child-node (text).
+
+The form itself has minimum CSS applied to it, just some margin to pleasantly space it out.
+
+## Comments
+
+In order to a) help me understand and remember my code better, and b) explain to anyone reviewing my code why I made certain choices, I have left detailed comments. Especially since this is an assignment.
+
+## CSS Reset
+
+At this point in my creation, there were some mild aesthetics that weren't lining up for me, especially when the browser was not full screen. Using dev tools in Chrome I discovered that the browser was applying some default styles, so I wrote some CSS to overwite this. In the very next class I learned about the concept of CSS Resets, so this was interesting to learn about. I decided not to reset all the CSS, but I included a commented out link in my ```<head>``` just as a reminder.
+
+I also fixed the position of my background so it wouldn't scroll - and at this point I understood why these should have been two seperate commits to github.
+
+## Finishing Touches
+
+At this point I am very happy with my work so far, and have only really made minor adjustments or made attemps to incorporate ```flex``` more.
+
+After learning about semantic tags, I updated those, however I think I prefer to just use ```<div>```s for the future, unless this is explicity defined as incorrect practice. My reasoning would be that if I am giving my containing divs an ID, it would most likely reflect the semantic tag in essence and creates an extra layer of identity.
+
+I tried, and did a lot of research, to try to remove any references to ```float``` in my code per an updated brief, however the only thing I am now using ```float``` for is actually the intended purpose, and that is to change a ```block``` item to ```inline``` and therefor enable ```<p>``` to wrap around ```<img>```. 
