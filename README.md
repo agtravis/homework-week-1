@@ -44,12 +44,13 @@ After learning in class about the concept of ```flex```, I immediately deployed 
 
 I was also having 2 issues with borders.
 
-![Border Issues](assets/images/border-issues.png)
+![Border Issues](https://github.com/agtravis/homework-week-1/blob/master/assets/images/border-issues.PNG)
+
 
 1. The title background is sitting on top of the border between the header and the main content, created an *indent* which looks rather unpleasant and unfinished. I could not get this to disappear, even by inserting an empty ```<div>``` with a ```clear: both;``` property attached.
 1. This may not be perceptable to most people, but I have pretty good eyesight, and this was bugging me - the border of the main content gives the div a new increased width, which means it no longer is perfectly in line with the width of the header. This would be easily fixable if I changed the width of the main content or header, but I didn't want to do this since the brief was very specific about the width *NOTE: 960px was the brief, I have 20px of padding in the main content, so the ```<div>``` is actually 920px. By the same logic I could therefore set the width of the ```<div>``` to 918px, but to me that is an imperfect solution.*
 
-![Border Issues: Fixed](assets/images/border-issues-fixed.png)
+![Border Issues: Fixed](https://github.com/agtravis/homework-week-1/blob/master/assets/images/border-issues-fixed.PNG)
 
 1. Elrey helped me with this one. He suggested giving a margin to one of the offending ```<div>```s. I applied the margin, and played with the amount using the dev tools in Chrome to get it perfect, turns out it was ```0.5px```. I do have one concern - I understand using a half a pixel measure on a high-definition monitor means that it is not a literal half pixel, however that means there may be a small-screened mobile device that might recreate the issue. I'm happy to cross that bridge when I am better versed in responsive HTML.
 1. I used Google to help with this. I discovered that if I used ```outline``` instead of ```border```, I could then go ahead and apply ```outline-offset``` to place the border technically *inside* the ```<div>```.
