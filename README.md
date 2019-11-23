@@ -89,13 +89,9 @@ The submit button is not a ```<button>```, but just a ```<a>``` styled to look l
 
 The form itself has minimum CSS applied to it, just some margin to pleasantly space it out.
 
-## Comments
-
-In order to a) help me understand and remember my code better, and b) explain to anyone reviewing my code why I made certain choices, I have left detailed comments. Especially since this is an assignment.
-
 ## CSS Reset
 
-At this point in my creation, there were some mild aesthetics that weren't lining up for me, especially when the browser was not full screen. Using dev tools in Chrome I discovered that the browser was applying some default styles, so I wrote some CSS to overwite this. In the very next class I learned about the concept of CSS Resets, so this was interesting to learn about. I decided not to reset all the CSS, but I included a commented out link in my ```<head>``` just as a reminder.
+At this point in my creation, there were some mild aesthetics that weren't lining up for me, especially when the browser was not full screen. Using dev tools in Chrome I discovered that the browser was applying some default styles, so I wrote some CSS to overwite this. In the very next class I learned about the concept of CSS Resets, so this was interesting to learn about. I decided not to reset all the CSS.
 
 I also fixed the position of my background so it wouldn't scroll - and at this point I understood why these should have been two seperate commits to github.
 
