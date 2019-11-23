@@ -4,7 +4,7 @@
 
 ### [Link](https://agtravis.github.io/homework-week-1/index.html) to uploaded webpage (most recent commit)
 
-## First Commits
+## First Commit
 
 My very first commit was simply to upload the blank files, and check that the repository accepted them.
 
