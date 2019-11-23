@@ -105,7 +105,7 @@ At this point I am very happy with my work so far, and have only really made min
 
 After learning about semantic tags, I updated those, however I think I prefer to just use ```<div>```s for the future, unless this is explicity defined as incorrect practice. My reasoning would be that if I am giving my containing divs an ID, it would most likely reflect the semantic tag in essence and creates an extra layer of identity.
 
-I tried, and did a lot of research, to try to remove any references to ```float``` in my code per an updated brief, however the only thing I am now using ```float``` for is actually the intended purpose, and that is to change a ```block``` item to ```inline``` and therefor enable ```<p>``` to wrap around ```<img>```. 
+I tried, and did a lot of research, to try to remove any references to ```float``` in my code per an updated brief, however the only thing I am now using ```float``` for is actually the intended purpose, and that is to change a ```block``` item to ```inline``` and therefore enable ```<p>``` to wrap around ```<img>```. 
 
 ![Border Issues: Fixed](https://github.com/agtravis/homework-week-1/blob/master/assets/images/float-img-left.PNG)
 
