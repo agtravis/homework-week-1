@@ -111,3 +111,8 @@ I tried, and did a lot of research, to try to remove any references to ```float`
 
 ## Future Endeavors
 
+As homework briefs are applied and my understanding increases, I expect to add the following features or technologies:
+
+1. Responsive features. Layout adjustments for smaller screens, from reducing margins/font-sizes etc. to displaying content in different arrangements.
+1. Obviously when I have projects I can actually link to them, or create more ```.html``` pages describing them, and adjust the portfolio page accordingly.
+1. The contact form will be active. I expect to eventually utilize multiple technologies here: JavaScript/jQuery or some scripting language to make the form active; possibly implement a regular expression to check the email address; create and communicate with a database to store this information; actually make the form send an email.
